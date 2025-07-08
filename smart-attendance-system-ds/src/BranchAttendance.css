@@ -1,0 +1,115 @@
+/* Basic resets and styles */
+
+.branch-attendance-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.content2{
+  flex: 1;
+  padding: 100px;
+  transition: margin-left 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+ /* Center items vertically */
+}
+.content2 {
+  flex: 1;
+  margin-left: 0px; /* Adjust based on your sidebar width */
+  padding: 100px;
+  transition: margin-left 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content2.shifted {
+  margin-left: 350px; /* Adjust based on sidebar width */
+}
+
+.input-group {
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group select{
+  width: 80%;
+  padding: 7px;
+}
+.date-picker-container {
+  display: flex;
+  gap:40px; /* Adjust the gap as needed */
+  align-items: center;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-date-picker {
+  font-size: 16px; /* Increase the font size */
+  padding: 10px; /* Increase the padding for a larger input field */
+  width: 80%; /* Make the input field take full width if needed */
+  max-width: 300px; /* Optionally, set a max width */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 4px; /* Slightly round the corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.search-button {
+  width: 97%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+.search-button {
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.search-button:hover {
+  background-color: light black;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.attendance-table-container {
+  width: 220%;
+  max-width: 1000px;
+  margin-top: 20px;
+}
+
+
+
+.attendance-table {
+  width: 100%;
+  
+}
+
+.attendance-table th,
+.attendance-table td {
+  border: 2px solid #dee2e6;
+  padding: 8px;
+  text-align: center;
+}
+
+.attendance-table th {
+  background-color: #e9ecef;
+}

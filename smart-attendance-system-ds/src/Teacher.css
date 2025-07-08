@@ -1,0 +1,132 @@
+/* Teacher.css */
+
+.teacher-page {
+  display: flex;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.menu-button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  background-color: lightgrey;
+  color: #333;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-button.active {
+  background-color: #bbb; /* Slightly darker when active */
+}
+
+.navbar {
+  width: 250px;
+  background-color: #343a40;
+  color: black;
+  transition: transform 0.3s ease;
+  transform: translateX(-250px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navbar.open {
+  transform: translateX(0);
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li {
+  padding: 15px 20px;
+  border-bottom: 1px solid #474f57;
+}
+
+.navbar ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+.bn {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  padding: 15px 20px;
+  border-top: 1px solid #474f57;
+}
+
+.bn button {
+  background-color:  #474f57;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.logout-button button:hover {
+  background-color: #5a6268;
+}
+
+/* Content area */
+.content {
+  flex: 1;
+  margin-left: -600px; /* Adjust based on your sidebar width */
+  padding: 0px;
+  transition: margin-left 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.profile-content {
+  background-color: white;
+  padding: 70px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px; /* Adjust as needed */
+  margin: 0;
+}
+
+
+.user-details h2 {
+  color: black;
+}
+
+.user-details h3 {
+  margin-top: 20px;
+  color: #343a40;
+}
+
+.user-details p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+.user-details strong {
+  color: #343a40;
+}
