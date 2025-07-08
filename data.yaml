@@ -1,0 +1,6 @@
+path: /Users/simhadri/App/yolo_faces  # Adjust this if needed
+train: images/train
+val: images/val
+
+nc: 1
+names: ['face']
